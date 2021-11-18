@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  font-size: 6.3751068vw;
+  background-color: whitesmoke;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.centerFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bettwenFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.startFlex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.endFlex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.aroundFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.evenlyFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.error {
+  font-weight: bold;
+  color: #960000;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.all-screen {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hiconnection-text {
+  background: linear-gradient(#00efe0, #790c86);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+}
+
+.hi-aqua {
+  color: #00efe0;
+}
+
+.hi-aqua-to-dark {
+  background: linear-gradient(#00efe0, #0a4642);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+}
+
+.MuiMenu-list {
+  font-size: inherit;
+}
+.MuiMenu-list .MuiMenuItem-root {
+  font-size: inherit;
+}
+.MuiMenu-list .MuiMenuItem-root .MuiAvatar-root, .MuiMenu-list .MuiMenuItem-root .MuiAvatar-circular, .MuiMenu-list .MuiMenuItem-root .MuiListItemIcon-root {
+  min-width: 1.6em;
+  width: 1.6em;
+  height: 1.6em;
+  font-size: 1.25em;
+}
+.MuiMenu-list .MuiMenuItem-root .MuiAvatar-root svg, .MuiMenu-list .MuiMenuItem-root .MuiAvatar-circular svg, .MuiMenu-list .MuiMenuItem-root .MuiListItemIcon-root svg {
+  font-size: 1.5em;
+}
+.MuiMenu-list .MuiMenuItem-root .MuiListItemIcon-root {
+  margin-right: 0.25em;
+}
+
+@media (min-width: 250px) {
+  body {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.32814725vw;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

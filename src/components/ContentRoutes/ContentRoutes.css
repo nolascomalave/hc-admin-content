@@ -1,0 +1,95 @@
+#ContentRoutes {
+  padding: 1em;
+  height: 100%;
+  overflow-y: auto;
+  /*.processLoader{
+  	bottom: 0;
+  	background-color: rgba(white, .5);
+
+  	.loader{
+  		font-size: inherit;
+  		min-width: 2.5em;
+  		min-height: 2.5em;
+  		max-width: 2.5em;
+  		max-height: 2.5em;
+  		color: var.$darkPurple;
+  	}
+  }*/
+}
+#ContentRoutes .MuiSvgIcon-root {
+  font-size: 1.5em;
+}
+#ContentRoutes .MuiFormGroup-root {
+  width: 100%;
+}
+#ContentRoutes .MuiFormGroup-root .MuiFormControlLabel-root {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+}
+#ContentRoutes .MuiFormGroup-root .MuiFormControlLabel-root .css-ahj2mt-MuiTypography-root {
+  font-size: inherit;
+  color: rgba(0, 0, 0, 0.6);
+}
+#ContentRoutes .MuiFormGroup-root .MuiFormControlLabel-root .css-julti5-MuiSwitch-root {
+  width: 3.6em;
+  height: 2.4em;
+  padding: 0.75em;
+}
+#ContentRoutes .MuiFormGroup-root .MuiFormControlLabel-root .css-julti5-MuiSwitch-root .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase {
+  padding: 0.55em;
+}
+#ContentRoutes .MuiFormGroup-root .MuiFormControlLabel-root .css-julti5-MuiSwitch-root .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase .MuiSwitch-input {
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+#ContentRoutes .MuiFormGroup-root .MuiFormControlLabel-root .css-julti5-MuiSwitch-root .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase .css-jsexje-MuiSwitch-thumb {
+  width: 1.25em;
+  height: 1.25em;
+}
+#ContentRoutes .MuiFormGroup-root .MuiFormControlLabel-root .css-julti5-MuiSwitch-root .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+  color: #790c86;
+}
+#ContentRoutes .MuiFormGroup-root .MuiFormControlLabel-root .css-julti5-MuiSwitch-root .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+  background-color: #790c86;
+}
+#ContentRoutes .MuiFormControl-root, #ContentRoutes .MuiAutocomplete-root {
+  width: 100%;
+  margin-bottom: 1em;
+}
+#ContentRoutes .MuiFormControl-root .MuiInputLabel-root, #ContentRoutes .MuiAutocomplete-root .MuiInputLabel-root {
+  font-size: inherit;
+}
+#ContentRoutes .MuiFormControl-root .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root, #ContentRoutes .MuiAutocomplete-root .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+  transform: translate(0.5em, 1.2em) scale(1);
+}
+#ContentRoutes .MuiFormControl-root .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused, #ContentRoutes .MuiAutocomplete-root .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #790c86;
+}
+#ContentRoutes .MuiFormControl-root .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused.Mui-error, #ContentRoutes .MuiAutocomplete-root .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused.Mui-error {
+  color: #d32f2f;
+}
+#ContentRoutes .MuiFormControl-root .MuiInput-root, #ContentRoutes .MuiAutocomplete-root .MuiInput-root {
+  margin-top: 1em;
+  font-size: inherit;
+}
+#ContentRoutes .MuiFormControl-root .MuiInput-root input, #ContentRoutes .MuiFormControl-root .MuiInput-root .MuiSelect-select, #ContentRoutes .MuiAutocomplete-root .MuiInput-root input, #ContentRoutes .MuiAutocomplete-root .MuiInput-root .MuiSelect-select {
+  padding: 0.3em 0.5em;
+  padding-bottom: 0.5em;
+}
+#ContentRoutes .MuiFormControl-root .MuiInput-root::before, #ContentRoutes .MuiAutocomplete-root .MuiInput-root::before {
+  border-bottom: 0.1em solid rgba(0, 0, 0, 0.42);
+}
+#ContentRoutes .MuiFormControl-root .MuiInput-root::after, #ContentRoutes .MuiAutocomplete-root .MuiInput-root::after {
+  border-bottom: 0.15em solid #790c86;
+}
+#ContentRoutes .MuiFormControl-root .MuiInput-root.Mui-error::after, #ContentRoutes .MuiAutocomplete-root .MuiInput-root.Mui-error::after {
+  border-color: #d32f2f;
+}
+#ContentRoutes .MuiAutocomplete-root .MuiInput-root {
+  padding-right: 4em;
+}
+
+/*# sourceMappingURL=ContentRoutes.css.map */

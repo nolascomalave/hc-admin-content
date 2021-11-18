@@ -1,0 +1,50 @@
+#AppBar {
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  font-size: inherit;
+  box-shadow: 0 0 0.5em black;
+  background-image: linear-gradient(to right, #0c020b, #190418);
+  z-index: 0;
+}
+#AppBar #LinearLoader {
+  height: 0.125em;
+  font-size: inherit;
+  background-image: linear-gradient(to right, #0c020b, #190418);
+}
+#AppBar #LinearLoader .MuiLinearProgress-bar {
+  background-color: whitesmoke;
+  opacity: 0.5;
+}
+#AppBar .MuiToolbar-root {
+  justify-content: space-between;
+  min-height: auto;
+  padding: 0 1em;
+  font-size: inherit;
+}
+#AppBar .MuiToolbar-root .MuiButtonBase-root {
+  padding: 0.3em;
+  margin-right: 0.6em;
+  font-size: 1.75em;
+}
+#AppBar .MuiToolbar-root .MuiButtonBase-root svg {
+  font-size: 1em;
+}
+#AppBar .MuiToolbar-root .MuiButtonBase-root:last-child {
+  margin-right: 0;
+}
+#AppBar .css-1juivf6-MuiTypography-root {
+  font-size: 1.25em !important;
+}
+
+@media (min-width: 950px) {
+  #AppBar .MuiToolbar-root {
+    justify-content: flex-end;
+  }
+  #AppBar .menu-button {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=AppBar.css.map */

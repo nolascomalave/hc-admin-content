@@ -1,0 +1,63 @@
+@use '../../global_vars' as var;
+
+#AppBar{
+	flex-shrink: 0;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	font-size: inherit;
+	box-shadow: 0 0 .5em black;
+	//background-color: darken(var.$darkPurple, 5);
+	background-image: linear-gradient(to right, darken(var.$darkPurple, 13), darken(var.$darkPurple, 10));
+	z-index: 0;
+
+	#LinearLoader{
+		height: .125em;
+		font-size: inherit;
+		background-image: linear-gradient(to right, darken(var.$darkPurple, 13), darken(var.$darkPurple, 10));
+
+		.MuiLinearProgress-bar{
+			background-color: var.$fondo;
+			opacity: .5;
+		}
+	}
+
+	.MuiToolbar-root{
+		justify-content: space-between;
+		min-height: auto;
+		padding: 0 1em;
+		font-size: inherit;
+
+		.MuiButtonBase-root{
+			padding: .3em;
+			margin-right: .6em;
+			font-size: 1.75em;
+
+			svg{
+				font-size: 1em;
+			}
+
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+
+	.css-1juivf6-MuiTypography-root{
+		font-size: 1.25em !important;
+	}
+}
+
+
+
+@media (min-width: 950px){
+	#AppBar{
+		.MuiToolbar-root{
+			justify-content: flex-end;
+		}
+
+		.menu-button{
+			display: none;
+		}
+	}
+}

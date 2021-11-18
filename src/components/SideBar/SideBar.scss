@@ -1,0 +1,178 @@
+@use '../../global_vars' as var;
+
+#SideBar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	flex-shrink: 0;
+	max-width: 100%;
+	width: 0;
+	color: white;
+	overflow-x: hidden;
+	box-shadow: 0 0 .5em black;
+	background-image: linear-gradient(to bottom, darken(var.$darkPurple, 13), darken(var.$darkPurple, 10));
+	//background-color: darken(var.$darkPurple, 13); //rgb(0,15,25);
+	transition: .5s;
+	z-index: 2000;
+
+	.container{
+		width: 250;
+		height: 100%;
+		padding-bottom:1em;
+		scroll-y: auto;
+	}
+
+	.header{
+		align-items: flex-start;
+		padding: .5em;
+		filter: drop-shadow(0 0 .25em black);
+
+		.logo{
+			display: flex;
+			align-items: center;
+			padding: .5em 0;
+
+			img{
+				width: 2.5em;
+				margin-right: .5em;
+			}
+
+			p{
+				font-size: .8em;
+				line-height: 1;
+				color: rgb(200,200,200);
+
+				b{
+					display: inline-block;
+					margin-bottom: .25em;
+					font-size: 1.2em;
+					color: white;
+				}
+			}
+
+			a{
+				text-decoration: none;
+			}
+		}
+
+		button{
+			flex-shrink: 0;
+			margin-left: 1em;
+			color: white;
+			border: none;
+			background-color: transparent;
+			transition: .25s;
+
+			&:hover{
+				color: darken(var.$fondo, 5);
+			}
+		}
+	}
+
+	&.is-open{
+		width: 250px;
+	}
+
+	.links{
+
+		.MuiListItemButton-root{
+			font-size: inherit;
+
+			.MuiTypography-root{
+				font-size: inherit;
+			}
+
+
+			&:hover{
+				background-color: rgb(black, .25);
+			}
+		}
+
+		.is-open{
+			background-color: var.$fondo;
+
+			svg path{
+				fill: var.$purple;
+			}
+
+			.MuiListItemText-root{
+				color: var.$purple;
+			}
+		}
+
+		.MuiListItemButton-root.is-open:hover{
+			background-color: darken(var.$fondo, 2);
+		}
+
+		.MuiTypography-root{
+			font-weight: bold;
+		}
+
+		.MuiCollapse-root{
+			.MuiListItemButton-root:hover{
+				background-color: rgb(black, .125);
+			}
+
+			.MuiTypography-root{
+				font-weight: initial;
+			}
+		}
+
+		svg path{
+			fill: white;
+		}
+
+		a{
+			display: block;
+			color: white;
+			text-decoration: none;
+		}
+
+		/*.active{
+			background-color: var.$fondo;
+
+			svg path{
+				fill: var.$purple;
+			}
+
+			.MuiListItemText-root{
+				color: var.$purple;
+			}
+		}*/
+	}
+}
+
+@media (min-width: 950px){
+	#SideBar{
+		position: initial;
+		height: auto;
+
+		&, &.is-open{
+			width: 250px;
+
+			.container{
+				width: 100%;
+
+				.header{
+					padding: 1em;
+					justify-content: center;
+
+					img{
+						width: 3em;
+					}
+
+					button{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px){
+	#SideBar, #SideBar.is-open{
+		width: 20.833333333333336%;
+	}
+}

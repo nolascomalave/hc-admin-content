@@ -1,0 +1,77 @@
+.NewRrhh {
+  width: 100%;
+  border-top-right-radius: 0.25em;
+  border-top-left-radius: 0.25em;
+  box-shadow: 0 0.25em 0.5em #c8c8c8;
+}
+.NewRrhh .header-section {
+  padding: 1em;
+  color: white;
+  border: 0.05em solid #c8c8c8;
+  border-bottom: 0;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  background-color: rgba(121, 12, 134, 0.75);
+}
+.NewRrhh .header-section svg {
+  margin-right: 0.5em;
+}
+.NewRrhh .header-section h1 {
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
+  user-select: none;
+}
+.NewRrhh .form {
+  display: block;
+  padding: 1em;
+  background-color: white;
+}
+.NewRrhh .fieldset {
+  margin-bottom: 2em;
+}
+.NewRrhh .fieldset__title {
+  margin-bottom: 0.5em;
+  font-size: 1.25em;
+}
+.NewRrhh .fieldset__title__text {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.25em;
+  color: #333333;
+}
+.NewRrhh .fieldset__title__text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+  height: 0.1em;
+  background-color: rgba(121, 12, 134, 0.5);
+}
+.NewRrhh .fieldset__content {
+  padding: 0 0.5em;
+}
+.NewRrhh .MuiButton-root, .NewRrhh .css-6m3mwv-MuiButtonBase-root-MuiButton-root-MuiLoadingButton-root {
+  padding: 0.25em 0.8em;
+  font-size: 0.875em;
+  border-radius: 0.25em;
+  border-size: 0.1em;
+}
+.NewRrhh .MuiButton-root.Mui-disabled, .NewRrhh .css-6m3mwv-MuiButtonBase-root-MuiButton-root-MuiLoadingButton-root.Mui-disabled {
+  padding: 0.25em 0.8em;
+  font-size: 0.875em;
+  border-size: 0.1em;
+  border-radius: 0.25em;
+}
+.NewRrhh .MuiButton-root {
+  color: #790c86;
+  border: 0.1em solid #790c86;
+  opacity: 0.9;
+}
+.NewRrhh .MuiButton-root:hover {
+  border-color: #790c86;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=NewRrhh.css.map */

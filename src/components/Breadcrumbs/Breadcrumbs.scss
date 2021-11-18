@@ -1,0 +1,41 @@
+.Breadcrumbs{
+	width: 100%;
+	font-size: inherit;
+	color: white;
+
+	a, *{
+		color: white;
+	}
+
+	nav{
+		font-size: inherit;
+
+		ol, ul{
+			font-size: inherit;
+		}
+	}
+
+	.MuiBreadcrumbs-li{
+		font-size: inherit;
+
+		a{
+			font-size: inherit;
+			color: darken(white, 15);
+			text-decoration: none;
+
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+
+		&:last-child a{
+			color: white;
+			user-select: none;
+
+			&:hover{
+				text-decoration: none;
+				cursor: initial;
+			}
+		}
+	}
+}

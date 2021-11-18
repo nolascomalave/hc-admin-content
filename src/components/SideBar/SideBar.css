@@ -1,0 +1,144 @@
+#SideBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  flex-shrink: 0;
+  max-width: 100%;
+  width: 0;
+  color: white;
+  overflow-x: hidden;
+  box-shadow: 0 0 0.5em black;
+  background-image: linear-gradient(to bottom, #0c020b, #190418);
+  transition: 0.5s;
+  z-index: 2000;
+}
+#SideBar .container {
+  width: 250;
+  height: 100%;
+  padding-bottom: 1em;
+  scroll-y: auto;
+}
+#SideBar .header {
+  align-items: flex-start;
+  padding: 0.5em;
+  filter: drop-shadow(0 0 0.25em black);
+}
+#SideBar .header .logo {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0;
+}
+#SideBar .header .logo img {
+  width: 2.5em;
+  margin-right: 0.5em;
+}
+#SideBar .header .logo p {
+  font-size: 0.8em;
+  line-height: 1;
+  color: #c8c8c8;
+}
+#SideBar .header .logo p b {
+  display: inline-block;
+  margin-bottom: 0.25em;
+  font-size: 1.2em;
+  color: white;
+}
+#SideBar .header .logo a {
+  text-decoration: none;
+}
+#SideBar .header button {
+  flex-shrink: 0;
+  margin-left: 1em;
+  color: white;
+  border: none;
+  background-color: transparent;
+  transition: 0.25s;
+}
+#SideBar .header button:hover {
+  color: #e8e8e8;
+}
+#SideBar.is-open {
+  width: 250px;
+}
+#SideBar .links {
+  /*.active{
+  	background-color: var.$fondo;
+
+  	svg path{
+  		fill: var.$purple;
+  	}
+
+  	.MuiListItemText-root{
+  		color: var.$purple;
+  	}
+  }*/
+}
+#SideBar .links .MuiListItemButton-root {
+  font-size: inherit;
+}
+#SideBar .links .MuiListItemButton-root .MuiTypography-root {
+  font-size: inherit;
+}
+#SideBar .links .MuiListItemButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+#SideBar .links .is-open {
+  background-color: whitesmoke;
+}
+#SideBar .links .is-open svg path {
+  fill: #790c86;
+}
+#SideBar .links .is-open .MuiListItemText-root {
+  color: #790c86;
+}
+#SideBar .links .MuiListItemButton-root.is-open:hover {
+  background-color: #f0f0f0;
+}
+#SideBar .links .MuiTypography-root {
+  font-weight: bold;
+}
+#SideBar .links .MuiCollapse-root .MuiListItemButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.125);
+}
+#SideBar .links .MuiCollapse-root .MuiTypography-root {
+  font-weight: initial;
+}
+#SideBar .links svg path {
+  fill: white;
+}
+#SideBar .links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 950px) {
+  #SideBar {
+    position: initial;
+    height: auto;
+  }
+  #SideBar, #SideBar.is-open {
+    width: 250px;
+  }
+  #SideBar .container, #SideBar.is-open .container {
+    width: 100%;
+  }
+  #SideBar .container .header, #SideBar.is-open .container .header {
+    padding: 1em;
+    justify-content: center;
+  }
+  #SideBar .container .header img, #SideBar.is-open .container .header img {
+    width: 3em;
+  }
+  #SideBar .container .header button, #SideBar.is-open .container .header button {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  #SideBar, #SideBar.is-open {
+    width: 20.8333333333%;
+  }
+}
+
+/*# sourceMappingURL=SideBar.css.map */
