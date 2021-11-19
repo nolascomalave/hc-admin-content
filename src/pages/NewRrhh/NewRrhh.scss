@@ -1,13 +1,16 @@
 @use '../../global_vars' as var;
 $dos00:rgb(200,200,200);
 
-.NewRrhh{
+.RrhhForm{
 	width: 100%;
+	max-width: 700px;
+	margin: auto;
 	border-top-right-radius: .25em;
 	border-top-left-radius: .25em;
 	box-shadow: 0 .25em .5em $dos00;
 
 	.header-section{
+		align-items: flex-start;
 		padding: 1em;
 		color: white;
 		border: .05em solid $dos00;
@@ -17,6 +20,7 @@ $dos00:rgb(200,200,200);
 		background-color: rgba(var.$purple, .75);
 
 		svg{
+			margin-top: .125em;
 			margin-right: .5em;
 		}
 
@@ -91,5 +95,11 @@ $dos00:rgb(200,200,200);
 			border-color: var.$purple;
 			opacity: 1;
 		}
+	}
+}
+
+@media (min-width: 1200px){
+	.NewRrhh{
+		max-width: 58.333333333333336%;
 	}
 }

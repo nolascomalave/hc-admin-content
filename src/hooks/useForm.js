@@ -11,11 +11,9 @@ export const useForm=(initialForm, validateForm)=>{
 
 		if(type==='checkbox' || type==='radio'){
 			value=checked;
-		}else{
-			if(format){
-				value=format(value);
-				e.target.value=value;
-			}
+		}else if(format){
+			value=format(value);
+			e.target.value=value;
 		}
 
 		setErrors({

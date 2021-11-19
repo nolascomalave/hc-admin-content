@@ -1,10 +1,13 @@
-.NewRrhh {
+.RrhhForm {
   width: 100%;
+  max-width: 700px;
+  margin: auto;
   border-top-right-radius: 0.25em;
   border-top-left-radius: 0.25em;
   box-shadow: 0 0.25em 0.5em #c8c8c8;
 }
-.NewRrhh .header-section {
+.RrhhForm .header-section {
+  align-items: flex-start;
   padding: 1em;
   color: white;
   border: 0.05em solid #c8c8c8;
@@ -13,34 +16,35 @@
   border-top-left-radius: inherit;
   background-color: rgba(121, 12, 134, 0.75);
 }
-.NewRrhh .header-section svg {
+.RrhhForm .header-section svg {
+  margin-top: 0.125em;
   margin-right: 0.5em;
 }
-.NewRrhh .header-section h1 {
+.RrhhForm .header-section h1 {
   display: inline-block;
   font-size: 1.5em;
   font-weight: bold;
   user-select: none;
 }
-.NewRrhh .form {
+.RrhhForm .form {
   display: block;
   padding: 1em;
   background-color: white;
 }
-.NewRrhh .fieldset {
+.RrhhForm .fieldset {
   margin-bottom: 2em;
 }
-.NewRrhh .fieldset__title {
+.RrhhForm .fieldset__title {
   margin-bottom: 0.5em;
   font-size: 1.25em;
 }
-.NewRrhh .fieldset__title__text {
+.RrhhForm .fieldset__title__text {
   position: relative;
   display: inline-block;
   padding-bottom: 0.25em;
   color: #333333;
 }
-.NewRrhh .fieldset__title__text::before {
+.RrhhForm .fieldset__title__text::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -49,29 +53,35 @@
   height: 0.1em;
   background-color: rgba(121, 12, 134, 0.5);
 }
-.NewRrhh .fieldset__content {
+.RrhhForm .fieldset__content {
   padding: 0 0.5em;
 }
-.NewRrhh .MuiButton-root, .NewRrhh .css-6m3mwv-MuiButtonBase-root-MuiButton-root-MuiLoadingButton-root {
+.RrhhForm .MuiButton-root, .RrhhForm .css-6m3mwv-MuiButtonBase-root-MuiButton-root-MuiLoadingButton-root {
   padding: 0.25em 0.8em;
   font-size: 0.875em;
   border-radius: 0.25em;
   border-size: 0.1em;
 }
-.NewRrhh .MuiButton-root.Mui-disabled, .NewRrhh .css-6m3mwv-MuiButtonBase-root-MuiButton-root-MuiLoadingButton-root.Mui-disabled {
+.RrhhForm .MuiButton-root.Mui-disabled, .RrhhForm .css-6m3mwv-MuiButtonBase-root-MuiButton-root-MuiLoadingButton-root.Mui-disabled {
   padding: 0.25em 0.8em;
   font-size: 0.875em;
   border-size: 0.1em;
   border-radius: 0.25em;
 }
-.NewRrhh .MuiButton-root {
+.RrhhForm .MuiButton-root {
   color: #790c86;
   border: 0.1em solid #790c86;
   opacity: 0.9;
 }
-.NewRrhh .MuiButton-root:hover {
+.RrhhForm .MuiButton-root:hover {
   border-color: #790c86;
   opacity: 1;
+}
+
+@media (min-width: 1200px) {
+  .NewRrhh {
+    max-width: 58.3333333333%;
+  }
 }
 
 /*# sourceMappingURL=NewRrhh.css.map */

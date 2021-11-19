@@ -341,14 +341,14 @@ function validateBirthYears(birthDate, min, max, obligatory){
         birthDate=organizeDate(birthDate);
         differenceDate=getTimeDifferenceBettwenDates(actualDate, birthDate);
 
-        if(extractNumberDate(actualDate)>extractNumberDate(birthDate)){
+        if(extractNumberDate(actualDate)>=extractNumberDate(birthDate)){
             if(differenceDate.years<min){
                 error="¡El recurso humano no debe tener menos de "+min+" años de edad!";
             }else if(differenceDate.years>max){
                 error="¡El recurso humano no debe tener más de "+max+" años de edad!";
             }
         }else{
-            error=`¡La fecha de nacimiento no debe ser mayor que la fecha de hoy (${actualDate})`;
+            error=`¡La fecha de nacimiento no debe ser mayor que la fecha de hoy (${actualDate})!`;
         }
     }else if(obligatory){
         error='¡Debe introducir la fecha de nacimiento!';
@@ -370,14 +370,14 @@ function validateAdmissionDate(date, min, max, obligatory/*, birth*/){
             differenceBirth=getTimeDifferenceBettwenDates(date, birth);
         }*/
 
-        if(extractNumberDate(actualDate)>extractNumberDate(date)){
+        if(extractNumberDate(actualDate)>=extractNumberDate(date)){
             if(differenceDate.years<min){
                 error="¡El recurso humano no debe tener menos de "+min+" años de haber ingresado!";
             }else if(differenceDate.years>max){
                 error="¡El recurso humano no debe tener más de "+max+" años de haber ingresado!";
             }
         }else{
-            error=`¡La fecha de ingreso no debe ser mayor que la fecha de hoy (${actualDate})`;
+            error=`¡La fecha de ingreso no debe ser mayor que la fecha de hoy (${actualDate})!`;
         }
     }else if(obligatory){
         error='¡Debe introducir la fecha de ingreso!';

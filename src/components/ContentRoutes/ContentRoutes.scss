@@ -19,6 +19,11 @@
 		}
 	}*/
 
+	.input-container{
+		display: inline-block;
+		width: 100%;
+	}
+
 	.MuiSvgIcon-root {
 		font-size: 1.5em;
 	}
@@ -117,5 +122,22 @@
 			.css-1q60rmi-MuiAutocomplete-endAdornment{
 			}
 		}
+	}
+}
+
+@media (min-width: 500px){
+	#ContentRoutes .input-container{
+		width: 50%;
+		padding: 0 .5em;
+
+		&.select{
+			width: 100%;
+		}
+	}
+}
+
+@media (min-width: 750px){
+	#ContentRoutes .input-container.select{
+		width: 50%;
 	}
 }

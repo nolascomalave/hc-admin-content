@@ -16,6 +16,10 @@
   	}
   }*/
 }
+#ContentRoutes .input-container {
+  display: inline-block;
+  width: 100%;
+}
 #ContentRoutes .MuiSvgIcon-root {
   font-size: 1.5em;
 }
@@ -90,6 +94,20 @@
 }
 #ContentRoutes .MuiAutocomplete-root .MuiInput-root {
   padding-right: 4em;
+}
+@media (min-width: 500px) {
+  #ContentRoutes .input-container {
+    width: 50%;
+    padding: 0 0.5em;
+  }
+  #ContentRoutes .input-container.select {
+    width: 100%;
+  }
+}
+@media (min-width: 750px) {
+  #ContentRoutes .input-container.select {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=ContentRoutes.css.map */
